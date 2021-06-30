@@ -1,4 +1,4 @@
-body {
+.main {
 	display: block;
     font: 100% "Work Sans", Helvetica, sans-serif;
     color: #666666;
@@ -63,7 +63,6 @@ hr.solid {
 	text-align: center;
 	color: #59BD85;
 	font-size: 30pt;
-    /*font-weight: 300;*/
 }
 
 .heading:hover {
