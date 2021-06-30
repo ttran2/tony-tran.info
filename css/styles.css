@@ -96,10 +96,6 @@ hr.solid {
   color: #2E8B57;
 }
 
-.modal-body p {
-  font-size: 14px;
-}
-
 .project-heading{
   margin: 0px;
   color: #59BD85;
@@ -109,6 +105,16 @@ hr.solid {
 
 .project-heading:hover{
   font
+}
+
+.project-heading h3 {
+  font-size: 2.25em;
+}
+
+.modal-body p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
 }
 
 .image{
