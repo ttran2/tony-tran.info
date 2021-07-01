@@ -77,6 +77,20 @@ hr.solid {
 	margin-bottom: 25px;
 }
 
+/*************** fade in out on scroll ***************/
+
+.fade {
+  transition: opacity 0.7s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
 /*************** Portfolio ***************/
 .center-container {
 	margin: auto;
