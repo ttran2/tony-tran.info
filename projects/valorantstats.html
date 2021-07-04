@@ -35,19 +35,19 @@
 
         <!-- right half -->
         <div class="col-md-6 text-left">
-          <div class="video-container">
+          <a href="projects/images/valorant-stats-1.png" target="_blank">
+            <img alt="ValorantStats Main GUI" src="projects/images/valorant-stats-1.png" class="img-responsive hover-img" />
+          </a>
+          <a href="projects/images/valorant-stats-2.png" target="_blank">
+            <img alt="ValorantStats Login GUI" src="projects/images/valorant-stats-2.png" style="width: 75%;" class="img-responsive hover-img" />
+          </a>
+          <div class="video-container" id="valorantstats-video" style="display: none;"> <!-- HIDE VIDEO FOR NOW -->
             <video controls class="video">
                 <source src="projects/videos/ValorantStats-showcase.mkv"
                         type="video/webm">
                 Sorry, your browser doesn't support embedded videos.
             </video>
           </div>
-          <a href="projects/images/valorant-stats-1.png" target="_blank">
-            <img alt="ValorantStats Main GUI" src="projects/images/valorant-stats-1.png" class="img-responsive hover-img" />
-          </a>
-          <a href="projects/images/valorant-stats-2.png" target="_blank">
-            <img alt="ValorantStats Login GUI" src="projects/images/valorant-stats-2.png" style="width: 50%;" class="img-responsive hover-img" />
-          </a>
 
           <p>
             <strong>Tags</strong><br>
@@ -65,6 +65,9 @@
   </div>
 
   <div class="modal-footer">
+    <a onClick="showcase(this);" target="_blank" class="btn">
+      <i class="fa fa-eye"></i>Showcase
+    </a>
     <a href="https://drive.google.com/open?id=1ULs4vmGdDJhgj-u3p4EVSOWsH7VklJAd" target="_blank" class="btn">
       <i class="fa fa-code"></i>Source code
     </a>
@@ -73,5 +76,21 @@
     </a>-->
   </div>
 
-</body>
+  <script>
+    function showcase(videoBtn) {
+      var video = document.getElementById("valorantstats-video");
+      if (video.style.display == "none") {
+        video.style.display = "block";
+        videoBtn.innerHTML = videoBtn.innerHTML.replace("Showcase","Hide video");
+        videoBtn.firstElementChild.classList.remove("fa-eye");
+        videoBtn.firstElementChild.classList.add("fa-eye-slash");
+      } else {
+        video.style.display = "none";
+        videoBtn.innerHTML = videoBtn.innerHTML.replace("Hide video", "Showcase");
+        videoBtn.firstElementChild.classList.remove("fa-eye-slash");
+        videoBtn.firstElementChild.classList.add("fa-eye");
+      }
+    }
+  </script>
 
+</body>
