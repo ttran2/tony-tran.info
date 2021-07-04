@@ -1,0 +1,76 @@
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/balloon.css">
+  <link rel="stylesheet" href="../css/bootstrap-3.3.5.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">X</button>
+    <h3 class="project-heading">Liquid Management Automatic Organizer</h3>
+  </div>
+
+  <div class="modal-body">
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- left half -->
+        <div class="col-md-6 text-left">
+          <p><strong>Project status: 
+            <span class="label label-status label-warning" aria-label="This project is currently on hold" data-balloon-pos="right">on hold</span>
+          </strong></p>
+          <p><strong>My Role: </strong>back end developer and sole database developer</p>
+          <p><strong>Product Description</strong><br>
+            TBD
+          </p>
+          <p><strong>Project notes</strong><br>
+            TBD
+          </p>
+        </div>
+
+        <!-- right half -->
+        <div class="col-md-6 text-left">
+          <a href="projects/images/lmao-1.png" target="_blank">
+            <img alt="LMAO Create Offer Page" src="projects/images/lmao-1.png" class="img-responsive hover-img" />
+          </a>
+          <div class="video-container">
+            <video controls preload="auto" class="video">
+                <source src="projects/videos/LMAO-launcher.avi"
+                        type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+          <div class="video-container" id="lmao-video" style="display: none;">
+            <video controls preload="auto" class="video">
+                <source src="projects/videos/LMAO-ui.mp4"
+                        type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+
+          <p>
+            <strong>Tags</strong><br>
+            TBD
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <a onClick="showcase(this, 'lmao-video');" target="_blank" class="btn">
+      <i class="fa fa-eye"></i>Showcase
+    </a>
+    <a href="https://drive.google.com/open?id=1HkfohO1J6QEweSFN9igFzr69Z6K2BUN1" target="_blank" class="btn">
+      <i class="fa fa-code"></i>Source code
+    </a>
+    <!--<a href="https://www.youtube.com" target="_blank" class="btn">
+      <i class="fa fa-eye" style="font-size: 16px;"></i> Preview
+    </a>-->
+  </div>
+
+</body>
