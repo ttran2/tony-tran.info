@@ -149,6 +149,7 @@ hr.solid {
   overflow: hidden;
   height: 0;
   padding-bottom: 56.25%; /* calculate by aspect ratio (h / w * 100%) */
+  margin-bottom: 24px;
 }
 
 .video-container .video {
