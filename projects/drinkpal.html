@@ -1,0 +1,108 @@
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/balloon.css">
+  <link rel="stylesheet" href="../css/bootstrap-3.3.5.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">X</button>
+    <h3 class="project-heading">DrinkPal</h3>
+  </div>
+
+  <div class="modal-body">
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- left half -->
+        <div class="col-md-6 text-left">
+          <p><strong>Project status: 
+            <span class="label label-status label-primary" aria-label="This project is currently under development" data-balloon-pos="right">in development</span>
+          </strong></p>
+          <p><strong>My Role: </strong>sole REST API server developer, sole Database developer</p>
+          <p><strong>Product Description</strong><br>
+            DrinkPal is an android social application for drinkers looking for a drinking buddy. With this app, the user can invite friends or total strangers to come drink with them. Alternatively, the user can instead get notified when other people around his/her area are looking for a drinking buddy and join them. The app also have various additional features, such as the ability to attach photo or video of their lively surrounding as they invite people to join them for a drink.
+          </p>
+          <p><strong>Project notes</strong><br>
+            As the sole server developer and database developer, I am in charge of both implementing and maintaining our Loopback server and our MySql database. I am also in charge of implementing and maintaining packages on the client side (the android app) that are in charge of communication between the server. Finally, I setup and maintain our cloud solutions.
+          </p>
+        </div>
+
+        <!-- right half -->
+        <div class="col-md-6 text-left">
+          <div class="col-md-6 text-center">
+            <a href="projects/images/drinkpal-1.png" target="_blank">
+              <img alt="DrinkPal Login Page" src="projects/images/drinkpal-1.png" class="img-responsive hover-img" />
+            </a>
+<!--             <a href="projects/images/drinkpal-3.png" target="_blank">
+              <img alt="DrinkPal Home Page" src="projects/images/drinkpal-3.png" class="img-responsive hover-img" />
+            </a> -->
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="projects/images/drinkpal-2.png" target="_blank">
+              <img alt="DrinkPal Create Pin Page" src="projects/images/drinkpal-2.png" class="img-responsive hover-img" />
+            </a>
+          </div>
+          <div class="video-container" id="drinkpal-video" style="display: none;">
+            <video controls preload="auto" class="video">
+                <source src="projects/videos/DrinkPal-Promo.mp4"
+                        type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+
+          <p>
+            <strong>Tags</strong><br>
+            <a href="https://loopback.io/" target="_blank" class="label label-info label-small hvr-grow-shadow">Loopback</a>
+            <a href="https://www.typescriptlang.org/" target="_blank" class="label label-info label-small hvr-grow-shadow">TypeScript</a>
+            <a href="https://en.wikipedia.org/wiki/Cloud_computing" class="label label-info label-small hvr-grow-shadow">Cloud Computing</a>
+            <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" class="label label-info label-small hvr-grow-shadow">REST API</a>
+            <a href="https://developers.google.com/apis-explorer" target="_blank" class="label label-info label-small hvr-grow-shadow">Google API</a>
+            <a href="https://firebase.google.com/" target="_blank" class="label label-info label-small hvr-grow-shadow">Firebase</a>
+            <a href="https://jwt.io/introduction" target="_blank" class="label label-info label-small hvr-grow-shadow">JWT authentication</a>
+            <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" class="label label-info label-small hvr-grow-shadow">Java</a>
+            <a href="https://developer.android.com/studio" target="_blank" class="label label-info label-small hvr-grow-shadow">Android Studio</a>
+            <a href="https://square.github.io/retrofit/" target="_blank" class="label label-info label-small hvr-grow-shadow">Retrofit</a>
+            <a href="https://www.mysql.com/" target="_blank" class="label label-info label-small hvr-grow-shadow">MySQL</a>
+            <a href="https://www.zenhub.com/" target="_blank" class="label label-info label-small hvr-grow-shadow">ZenHub</a>
+            <a href="https://www.redhat.com/en/topics/security/api-security" target="_blank" class="label label-info label-small hvr-grow-shadow">API Security</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <a onClick="showcase(this);" target="_blank" class="btn">
+      <i class="fa fa-eye"></i>Showcase
+    </a>
+    <a href="https://drive.google.com/open?id=1vhDuK-5Xom6G0cF1qqMuHA0q9o_db7dg" target="_blank" class="btn">
+      <i class="fa fa-code"></i>Source code
+    </a>
+    <!--<a href="https://www.youtube.com" target="_blank" class="btn">
+      <i class="fa fa-eye" style="font-size: 16px;"></i> Preview
+    </a>-->
+  </div>
+
+  <script>
+    function showcase(videoBtn) {
+      var video = document.getElementById("drinkpal-video");
+      if (video.style.display == "none") {
+        video.style.display = "block";
+        videoBtn.innerHTML = videoBtn.innerHTML.replace("Showcase","Hide video");
+        videoBtn.firstElementChild.classList.remove("fa-eye");
+        videoBtn.firstElementChild.classList.add("fa-eye-slash");
+      } else {
+        video.style.display = "none";
+        videoBtn.innerHTML = videoBtn.innerHTML.replace("Hide video", "Showcase");
+        videoBtn.firstElementChild.classList.remove("fa-eye-slash");
+        videoBtn.firstElementChild.classList.add("fa-eye");
+      }
+    }
+  </script>
+
+</body>
