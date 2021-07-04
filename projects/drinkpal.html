@@ -37,9 +37,9 @@
             <a href="projects/images/drinkpal-1.png" target="_blank">
               <img alt="DrinkPal Login Page" src="projects/images/drinkpal-1.png" class="img-responsive hover-img" />
             </a>
-<!--             <a href="projects/images/drinkpal-3.png" target="_blank">
+            <a href="projects/images/drinkpal-3.png" target="_blank">
               <img alt="DrinkPal Home Page" src="projects/images/drinkpal-3.png" class="img-responsive hover-img" />
-            </a> -->
+            </a>
           </div>
           <div class="col-md-6 text-center">
             <a href="projects/images/drinkpal-2.png" target="_blank">
@@ -77,7 +77,7 @@
   </div>
 
   <div class="modal-footer">
-    <a onClick="showcase(this);" target="_blank" class="btn">
+    <a onClick="showcase(this, 'drinkpal-video');" target="_blank" class="btn">
       <i class="fa fa-eye"></i>Showcase
     </a>
     <a href="https://drive.google.com/open?id=1vhDuK-5Xom6G0cF1qqMuHA0q9o_db7dg" target="_blank" class="btn">
@@ -87,22 +87,5 @@
       <i class="fa fa-eye" style="font-size: 16px;"></i> Preview
     </a>-->
   </div>
-
-  <script>
-    function showcase(videoBtn) {
-      var video = document.getElementById("drinkpal-video");
-      if (video.style.display == "none") {
-        video.style.display = "block";
-        videoBtn.innerHTML = videoBtn.innerHTML.replace("Showcase","Hide video");
-        videoBtn.firstElementChild.classList.remove("fa-eye");
-        videoBtn.firstElementChild.classList.add("fa-eye-slash");
-      } else {
-        video.style.display = "none";
-        videoBtn.innerHTML = videoBtn.innerHTML.replace("Hide video", "Showcase");
-        videoBtn.firstElementChild.classList.remove("fa-eye-slash");
-        videoBtn.firstElementChild.classList.add("fa-eye");
-      }
-    }
-  </script>
 
 </body>

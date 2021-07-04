@@ -65,7 +65,7 @@
   </div>
 
   <div class="modal-footer">
-    <a onClick="showcase(this);" target="_blank" class="btn">
+    <a onClick="showcase(this, 'valorantstats-video');" target="_blank" class="btn">
       <i class="fa fa-eye"></i>Showcase
     </a>
     <a href="https://drive.google.com/open?id=1ULs4vmGdDJhgj-u3p4EVSOWsH7VklJAd" target="_blank" class="btn">
@@ -75,22 +75,5 @@
       <i class="fa fa-eye" style="font-size: 16px;"></i> Preview
     </a>-->
   </div>
-
-  <script>
-    function showcase(videoBtn) {
-      var video = document.getElementById("valorantstats-video");
-      if (video.style.display == "none") {
-        video.style.display = "block";
-        videoBtn.innerHTML = videoBtn.innerHTML.replace("Showcase","Hide video");
-        videoBtn.firstElementChild.classList.remove("fa-eye");
-        videoBtn.firstElementChild.classList.add("fa-eye-slash");
-      } else {
-        video.style.display = "none";
-        videoBtn.innerHTML = videoBtn.innerHTML.replace("Hide video", "Showcase");
-        videoBtn.firstElementChild.classList.remove("fa-eye-slash");
-        videoBtn.firstElementChild.classList.add("fa-eye");
-      }
-    }
-  </script>
 
 </body>

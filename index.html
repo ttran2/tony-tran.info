@@ -304,6 +304,23 @@
     </div>
 <!-- ----------------------------------------------------------------------------------- -->
 
+    <script>
+      function showcase(videoBtn, videoId) {
+        var video = document.getElementById(videoId);
+        if (video.style.display == "none") {
+          video.style.display = "block";
+          videoBtn.innerHTML = videoBtn.innerHTML.replace("Showcase","Hide video");
+          videoBtn.firstElementChild.classList.remove("fa-eye");
+          videoBtn.firstElementChild.classList.add("fa-eye-slash");
+        } else {
+          video.style.display = "none";
+          videoBtn.innerHTML = videoBtn.innerHTML.replace("Hide video", "Showcase");
+          videoBtn.firstElementChild.classList.remove("fa-eye-slash");
+          videoBtn.firstElementChild.classList.add("fa-eye");
+        }
+      }
+    </script>
+
     <script src="js/fade.js"></script>
 
   </body>
